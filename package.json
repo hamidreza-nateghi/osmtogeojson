@@ -1,11 +1,8 @@
 {
-  "name": "react-ts-vite-template",
+  "name": "osmtogeojson",
   "version": "0.0.0",
   "homepage": "https://hamidreza-nateghi.github.io/osmtogeojson",
-  "author": {
-    "name": "Fabien MARIE-LOUISE",
-    "url": "https://github.com/fabien-ml"
-  },
+  "author": "Hamidreza Nateghi",
   "scripts": {
     "build": "npm run typecheck && vite build",
     "commit": "git-cz",
