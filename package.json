@@ -1,6 +1,7 @@
 {
   "name": "react-ts-vite-template",
   "version": "0.0.0",
+  "homepage": "https://hamidreza-nateghi.github.io/osmtogeojson",
   "author": {
     "name": "Fabien MARIE-LOUISE",
     "url": "https://github.com/fabien-ml"
@@ -8,6 +9,8 @@
   "scripts": {
     "build": "npm run typecheck && vite build",
     "commit": "git-cz",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "format": "prettier . --write --ignore-path .gitignore && git update-index --again",
     "lint": "eslint . --ext .ts,.tsx --fix --ignore-path .gitignore",
@@ -75,6 +78,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-testing-library": "^5.5.1",
+    "gh-pages": "^6.0.0",
     "husky": "^8.0.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^28.1.1",

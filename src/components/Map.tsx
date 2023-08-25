@@ -1,14 +1,13 @@
 import type { PropsWithChildren } from "react";
 import {
   type GeoJSONProps,
-  GeoJSON,
   MapContainer,
   TileLayer,
   ZoomControl,
 } from "react-leaflet";
 
 type Props = {
-  geojsonData: GeoJSONProps["data"];
+  geojsonData?: GeoJSONProps["data"];
 };
 
 export function Map({ geojsonData, children }: PropsWithChildren<Props>) {
@@ -20,7 +19,7 @@ export function Map({ geojsonData, children }: PropsWithChildren<Props>) {
       className="h-full"
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-      <GeoJSON data={geojsonData} />
+      {/* <GeoJSON data={geojsonData} /> */}
       <ZoomControl position="bottomright" />
       {children}
     </MapContainer>
